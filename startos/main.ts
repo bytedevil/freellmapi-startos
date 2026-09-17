@@ -34,7 +34,8 @@ export const main = sdk.setupMain(async ({ effects }) => {
       }),
       'freellmapi-subcontainer',
     ),
-    // No exec command — the pre-built Docker image provides its own entrypoint.
+    // The pre-built image runs: node server/dist/index.js (port 3001 by default)
+    exec: { command: ['node', 'server/dist/index.js'] },
     ready: {
       display: i18n('Web Interface'),
       fn: () =>

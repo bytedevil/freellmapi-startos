@@ -3,7 +3,16 @@
   "dependencies": {
     "@start9labs/start-sdk": "2.0.9"
   },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "ncc build startos/index.ts -o ./javascript/index.js"
+  },
   "overrides": {
     "@start9labs/start-sdk": "$@start9labs/start-sdk"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.1",
+    "@vercel/ncc": "^0.45.0",
+    "typescript": "^6.0.3"
   }
 }

@@ -2,4 +2,4 @@
 // here. `uiPort` is the port the example daemon serves on: main.ts health-checks
 // it, and you bind it from an interface in interfaces.ts once you add one. Change
 // it to whatever your service listens on.
-export const uiPort = 80
+export const uiPort = 3001

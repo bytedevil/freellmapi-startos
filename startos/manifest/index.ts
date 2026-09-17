@@ -8,7 +8,7 @@ export const manifest = setupManifest({
   packageRepo: 'https://github.com/bytedevil/freellmapi-startos',
   upstreamRepo: 'https://github.com/tashfeenahmed/freellmapi',
   marketingUrl: 'https://freellmapi.co',
-  donationUrl: '',
+  donationUrl: null,
   description: { short, long },
   volumes: ['freellmapi-data'],
   images: {
